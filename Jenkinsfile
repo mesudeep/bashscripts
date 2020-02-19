@@ -1,6 +1,6 @@
 node(){
     stage('Checkout'){
-        chechout scm
+        checkout scm
     }
     stage('Build'){
         sh "sh untilloop.sh"
