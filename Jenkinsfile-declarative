@@ -22,7 +22,7 @@ pipeline{
             sh 'mail -s "Success" timalsinasrijana77@gmail.com'
         }
         failure {
-            echo "Failure"
+            echo "Failed"
             sh 'mail -s "Failed" timalsinasrijana77@gmail.com'
 
         }
