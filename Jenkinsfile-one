@@ -18,4 +18,19 @@ pipeline{
             }
         }
     }
+    post {
+        success {
+            echo "Success"
+            sh 'mail -s "success" meliverpool36@gmail.com'
+
+
+        }
+        failure {
+            echo "Failed"
+            sh 'mail -s "Failed" meliverpool36@gmail.com'
+        }
+        always {
+            deleteDir()
+        }
+    }
 }
