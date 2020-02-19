@@ -1,0 +1,21 @@
+pipeline{
+    agent any
+
+    environment {
+        project ="Test"
+    }
+    stages{
+        stage('build'){
+            steps{
+                sh "sh untilloop.sh"
+            }
+        }
+        stage('array'){
+            steps{
+                sh "sh array"
+            }
+        }
+    }
+    }
+    }
+}
