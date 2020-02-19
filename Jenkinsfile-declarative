@@ -16,6 +16,20 @@ pipeline{
             }
         }
     }
+    post {
+        success {
+            echo "Success"
+            sh 'mail -s "Success" timalsinasrijana77@gmail.com'
+        }
+        failure {
+            echo "Failure"
+            sh 'mail -s "Failed" timalsinasrijana77@gmail.com'
+
+        }
+        always {
+            deleteDir()
+        }
+    }
 }
 
 
