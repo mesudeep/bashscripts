@@ -7,7 +7,7 @@ node(){
 
     }
     stage('Array'){
-        sh "array"
+        sh "sh array"
     }
     stage('Notify'){
         sh 'mail -s “the job ran file” timalsinasrijana77@gmail.com'
