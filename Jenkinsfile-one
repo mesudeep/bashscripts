@@ -1,0 +1,21 @@
+pipeline{
+    agent any
+    environment {
+        project = "Test"
+
+    }
+    stages {
+        stage('build'){
+            steps{
+                sh "sh untiloop.sh"
+
+            }
+
+        }
+        stage('Array'){
+            steps{
+                sh "sh array"
+            }
+        }
+    }
+}
