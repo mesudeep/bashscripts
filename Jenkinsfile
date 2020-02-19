@@ -11,7 +11,7 @@ node(){
         sh "sh untilloop.sh"
 
     }
-    if (params.environment == 'Dev'){
+    if (params.environment == 'dev'){
         stage('Array'){
             sh "sh array"
         }
