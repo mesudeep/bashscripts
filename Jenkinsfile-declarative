@@ -1,5 +1,5 @@
 pipeline{
-    agent1
+    agent any
     environment {
         projet = "Test"
 
