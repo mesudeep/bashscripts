@@ -3,7 +3,7 @@ node(){
         checkout scm
     }
     stage('Printing Parameter'){
-        sh "echo ${environment}"
+        sh "echo ${Development}"
     }
     stage('Build'){
         sh "sh untilloop.sh"
