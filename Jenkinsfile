@@ -11,8 +11,10 @@ node(){
         sh "sh untilloop.sh"
 
     }
-    stage('Array'){
-        sh "sh array"
+    if (params.environment == 'Dev'){
+        stage('Array'){
+            sh "sh array"
+        }
     }
     stage('Notify'){
         sh 'mail -s “the job ran file” timalsinasrijana77@gmail.com'
