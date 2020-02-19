@@ -1,0 +1,14 @@
+node(){
+  stage('checkout'){
+     checkout scm
+}
+stage('build'){
+sh "sh untilloop.sh"
+}
+stage('array'){
+sh "sh array"
+}
+stage('notify'){
+sh 'mail -s "the job ran fine" mebiru2051@gmail.com'
+}
+}
