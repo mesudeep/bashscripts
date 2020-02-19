@@ -2,7 +2,8 @@
 Contains all bash scripts
 
 ## Heading 2
-bla bla
+Heading 2
+
 
 ## List Example
 1.  Condi
