@@ -1,6 +1,11 @@
 node(){
     stage('Checkout'){
+
         checkout scm
+
+    }
+    stage('printing parameter'){
+        sh "echo ${environment}"
     }
     stage('Build'){
         sh "sh untilloop.sh"
