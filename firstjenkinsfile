@@ -1,4 +1,4 @@
-﻿node('maven'){
+﻿pipeline('maven'){
     stage('Checkout'){
         checkout scm //commenting
     }
