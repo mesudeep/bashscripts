@@ -10,12 +10,10 @@ pipeline{
                 sh "sh untilloop.sh"
             }
         }
+    }
         stage('array'){
             steps{
                 sh "sh array"
             }
         }
     }
-    }
-    }
-}
