@@ -16,4 +16,17 @@ pipeline{
             }
         }
     }
+    post {
+        success {
+            echo "success"
+            sh 'mail -s "Success" mebiru2051@gmail.com'
+        }
+        failure {
+            echo "Failure"
+            sh 'mail -s "Failed" mebiru2051@gmail.com'
+        }
+        always {
+            deleteDir()
+        }
+    }
 }
