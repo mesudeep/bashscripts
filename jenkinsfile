@@ -1,0 +1,17 @@
+node(){
+    stage('Checkout'){
+        Checkout scm
+    }
+    stage('Printing Parameter'){
+        sh "echo ${Environment}"
+    }
+    stage('Build'){
+        sh "sh untilloop.sh"
+    }
+    stage('Array'){
+        sh "sh array"
+    }
+    stage('Notify'){
+        sh "mail -s 'The file ran successfully' aavasrimal@gmail.com'
+    }
+}
