@@ -16,8 +16,5 @@ pipeline{
                 sh "sh array"
             }
         }
-<<<<<<< HEAD
-    }
-=======
-    }
->>>>>>> 1b9f67e00c4aa71db490eb3df42a183a7b415a90
+}
+        
